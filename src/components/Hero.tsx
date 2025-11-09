@@ -6,11 +6,11 @@ const Hero = () => {
     useGSAP(() => {
         const tl = gsap.timeline();
     
-        tl.from('.gsap', {
-            duration: 1,
-            y: 80,
-            opacity: 0.5,
-            stagger: 0.2
+        tl.to('.hero-text-animation', {
+            opacity: 1.5,
+            stagger: 0.2,
+            overwrite: 'auto',
+            delay: 1,
         })
         const specialTl = gsap.timeline({repeat: -1})
         specialTl.to('#special-word', {
@@ -43,22 +43,22 @@ const Hero = () => {
           tl.add(specialTl);
     }, [])
   return (
-    <section className="w-full min-h-dvh bg-[url(/assets/images/background-img.png)] flex items-center justify-center">
-        <div className="mt-[150px]">
-            <h1 id='title' className="gsap text-[48px] font-raleway font-extrabold text-primary-green text-center"><span id='special-word' className="text-primary-purple font-pacifico"> Redefining</span> the Future of Finance</h1>
-            <p id='sub-title' className="gsap text-[#333333] text-[20px] font-nunito-sans mt-1 text-center">Manage, invest, and grow your money effortlessly with opay</p>
-            <div id='hero-ctas' className="gsap w-full flex items-center justify-center gap-2 mt-5">
+    <section className="w-full h-fit bg-[url(/assets/images/background-img.png)] flex items-center justify-center overflow-hidden">
+        <div className="mt-[150px] lg:mt-[170px] flex flex-col justify-center items-center">
+            <h1 id='title' className="hero-text-animation max-w-[320px] lg:max-w-full opacity-0 text-[28px] lg:text-[48px] font-raleway font-extrabold text-primary-green text-center"><span id='special-word' className="text-primary-purple font-pacifico"> Redefining</span> the Future of Finance</h1>
+            <p id='sub-title' className="hero-text-animation max-w-[320px] lg:max-w-full opacity-0 text-[#333333] text-[18px] lg:text-[20px] font-nunito-sans mt-1 text-center">Manage, invest, and grow your money effortlessly with opay</p>
+            <div id='hero-ctas' className="hero-text-animation opacity-0 w-full flex items-center justify-center gap-2 mt-5">
                 <button className="px-3 py-2 bg-black text-white rounded-lg font-raleway flex items-center gap-2.5 cursor-pointer">
-                <svg width="28" height="34" viewBox="0 0 28 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg className='w-[22px] h-[28px]'viewBox="0 0 28 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M15.4491 2.95864C17.7058 0.0143539 20.8431 0 20.8431 0C20.8431 0 21.3097 2.76813 19.0679 5.43473C16.6741 8.28206 13.9532 7.81614 13.9532 7.81614C13.9532 7.81614 13.4423 5.57682 15.4491 2.95864ZM14.2402 9.75521C15.4012 9.75521 17.5558 8.17549 20.3604 8.17549C25.1881 8.17549 27.0873 11.5759 27.0873 11.5759C27.0873 11.5759 23.3728 13.4558 23.3728 18.0174C23.3728 23.1632 28 24.9366 28 24.9366C28 24.9366 24.7654 33.9487 20.3964 33.9487C18.3897 33.9487 16.8296 32.6101 14.7153 32.6101C12.5606 32.6101 10.4224 33.9986 9.02982 33.9986C5.04023 33.9987 0 25.4498 0 18.5779C0 11.8169 4.26623 8.27022 8.26777 8.27022C10.8691 8.27022 12.8878 9.75521 14.2402 9.75521Z" fill="white"/>
                 </svg>
                 <div className="text-white font-raleway">
-                    <p className="text-[8px] text-start">Download on the</p>
-                    <p className="text-[16px] text-start">App Store</p>
+                    <p className="text-[6px] lg:text-[8px] text-start">Download on the</p>
+                    <p className="text-[14px] lg:text-[16px] text-start">App Store</p>
                 </div>
                 </button>
                 <button className="px-3 py-2 bg-black text-white rounded-lg font-raleway flex items-center gap-2.5 cursor-pointer">
-                <svg width="24" height="28" viewBox="0 0 24 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg className='w-[22px] h-[28px]' viewBox="0 0 24 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_13_944)">
                 <path d="M15.387 8.38238L0.90565 0.105653C0.723679 -7.36862e-06 0.494748 0.00586265 0.318648 0.111523C0.136677 0.217183 0.0251465 0.405024 0.0251465 0.616345C0.0251465 0.616345 0.0310165 1.37945 0.0368865 2.63563L10.5853 13.1841L15.387 8.38238Z" fill="url(#paint0_linear_13_944)"/>
                 <path d="M0.0368652 2.63564C0.0544753 7.16729 0.107305 18.1677 0.130786 23.6444L10.5912 13.1841L0.0368652 2.63564Z" fill="url(#paint1_linear_13_944)"/>
@@ -91,12 +91,12 @@ const Hero = () => {
                 </defs>
                 </svg>
                 <div className="text-white font-raleway">
-                    <p className="text-[8px] text-start">Android app on</p>
-                    <p className="text-[16px] text-start">Google Play</p>
+                    <p className="text-[6px] lg:text-[8px] text-start">Android app on</p>
+                    <p className="text-[14px] lg:text-[16px] text-start">Google Play</p>
                 </div>
                 </button>
             </div>
-            <img id='hero-img' src="/assets/images/hero-phones.png" alt="Images of Opay's UI"  className="gsap mt-[100px]"/>
+            <img id='hero-img' src="/assets/images/hero-phones.png" alt="Images of Opay's UI"  className="hero-text-animation opacity-0 mt-[70px] lg:mt-[80px] w-[380px] lg:w-fit translate-y-[20px] lg:translate-y-0"/>
         </div>
     </section>
   )
