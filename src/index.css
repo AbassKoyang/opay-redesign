@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-raleway: "Raleway", Arial, sans-serif;
+  --font-nunito-sans: "Nunito Sans", sans-serif;
+  --font-pacifico: "Pacifico", cursive;
+  --color-primary-green: rgba(29, 201, 155, 1);
+  --color-primary-purple: rgba(33, 16, 96, 1);
+}
+
+#root {
+  width: 100vw;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+body {
+  width: 100%;
+  max-width: 1200px;
+  overflow-x: hidden;
+}
