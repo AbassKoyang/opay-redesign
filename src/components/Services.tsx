@@ -27,9 +27,9 @@ const Services = () => {
         })
         gsap.to('#services-img', {
             scale: 1,
-            opacity: 0.7,
+            opacity: 1,
             ease: 'power2.inOut',
-            duration: 1,
+            duration: 0.7,
             scrollTrigger: {
                 trigger: '#services-con',
                 start: 'top center'
@@ -102,8 +102,8 @@ const Services = () => {
   return (
     <section className="pt-[120px] pb-[60px] w-full h-fit bg-white flex flex-col items-center justify-center">
         <div className="w-[85%]">
-            <p className="text-[20px] font-nunito-sans text-[#333333] text-center">Our services</p>
-            <h3 className="text-[40px] font-raleway text-primary-purple text-center font-extrabold">What We Do</h3>
+            <p className="text-[16px] lg:text-[20px] font-nunito-sans text-[#333333] text-center">Our services</p>
+            <h3 className="text-[32px] lg:text-[40px] font-raleway text-primary-purple text-center font-extrabold">What We Do</h3>
         </div>
         <div id="services-con" className="w-full mt-10 bg-primary-green flex items-center justify-center py-12 relative">
             <div className="w-[85%] flex flex-col lg:flex-row gap-10 items-center justify-between">
@@ -113,19 +113,19 @@ const Services = () => {
                 </div>
                 <div className="flex items-center jusify-center h-full relative">
                     <img id="services-img" className="w-full lg:w-[500px] z-20 scale-75 opacity-0" src="/assets/images/services-img.png" alt="Opay app" />
-                    <svg id="circle" className="opacity-0 absolute top-[-20px] lg:top-[-50px] left-[-50px]  lg:left-[-80px] rotate-[270deg] lg:rotate-0 z-10 w-[100px] h-[100px] lg:w-[180px] lg:h-[137px]" viewBox="0 0 180 137" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg id="circle" className="opacity-0 hidden lg:block absolute lg:top-[-50px]  lg:left-[-80px] z-10 lg:w-[180px] lg:h-[137px]" viewBox="0 0 180 137" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M90 -13.9326C123.137 -13.9326 150 12.9303 150 46.0674C150 79.2045 123.137 106.067 90 106.067C56.8629 106.067 30 79.2045 30 46.0674C30 12.9303 56.8629 -13.9326 90 -13.9326Z" stroke="#C4FFF6" stroke-width="20"/>
                     <circle cx="90" cy="46.0673" r="70" stroke="#C4FFF6" stroke-width="20"/>
                     <circle cx="90" cy="46.0673" r="80" stroke="#C4FFF6" stroke-width="20"/>
                     </svg>
-                    <svg id="circle" className="opacity-0 absolute bottom-[-50px] left-[50%] translate-x-[-50%] w-[100px] h-[100px] z-10 lg:w-[180px] lg:h-[137px]" viewBox="0 0 180 137" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg id="circle" className="opacity-0 hidden lg:block absolute bottom-[-50px] left-[50%] translate-x-[-50%] z-10 lg:w-[180px] lg:h-[137px]" viewBox="0 0 180 137" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M90 -13.9326C123.137 -13.9326 150 12.9303 150 46.0674C150 79.2045 123.137 106.067 90 106.067C56.8629 106.067 30 79.2045 30 46.0674C30 12.9303 56.8629 -13.9326 90 -13.9326Z" stroke="#C4FFF6" stroke-width="20"/>
                     <circle cx="90" cy="46.0673" r="70" stroke="#C4FFF6" stroke-width="20"/>
                     <circle cx="90" cy="46.0673" r="80" stroke="#C4FFF6" stroke-width="20"/>
                     </svg>
                 </div>
             </div>
-            <svg id="circle" className="opacity-0 absolute top-0 right-0 size-[100px] lg:w-[152px] lg:h-[122px]" viewBox="0 0 152 122" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg id="circle" className="opacity-0 hidden lg:block absolute top-0 right-0 size-[100px] lg:w-[152px] lg:h-[122px]" viewBox="0 0 152 122" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M90 -28.0001C123.137 -28.0001 150 -1.13721 150 31.9999C150 65.137 123.137 91.9999 90 91.9999C56.8629 91.9999 30 65.137 30 31.9999C30 -1.13721 56.8629 -28.0001 90 -28.0001Z" stroke="#C4FFF6" stroke-width="20"/>
             <circle cx="90" cy="31.9998" r="70" stroke="#C4FFF6" stroke-width="20"/>
             <circle cx="90" cy="32" r="80" stroke="#C4FFF6" stroke-width="20"/>
@@ -154,31 +154,34 @@ const Services = () => {
                 </div>
                 <div className="flex items-center jusify-center h-full relative">
                     <img id="owealth-img" className="w-full lg:w-[500px] z-20 scale-75 opacity-0" src="/assets/images/owealth-img.png" alt="Opay app" />
-                    <svg id="owealth-circle" className="opacity-0 absolute top-[-20px] lg:top-[-50px] left-[-50px]  lg:left-[-80px] rotate-[270deg] lg:rotate-0 z-10 w-[100px] h-[100px] lg:w-[180px] lg:h-[137px]" viewBox="0 0 180 137" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg className="opacity-0 hidden lg:block absolute lg:top-[-50px]  lg:left-[-80px] z-10 lg:w-[180px] lg:h-[137px]" viewBox="0 0 180 137" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M90 -13.9326C123.137 -13.9326 150 12.9303 150 46.0674C150 79.2045 123.137 106.067 90 106.067C56.8629 106.067 30 79.2045 30 46.0674C30 12.9303 56.8629 -13.9326 90 -13.9326Z" stroke="#C4FFF6" stroke-width="20"/>
                     <circle cx="90" cy="46.0673" r="70" stroke="#C4FFF6" stroke-width="20"/>
                     <circle cx="90" cy="46.0673" r="80" stroke="#C4FFF6" stroke-width="20"/>
                     </svg>
-                    <svg id="owealth-circle" className="opacity-0 absolute bottom-[-50px] left-[50%] translate-x-[-50%] w-[100px] h-[100px] z-10 lg:w-[180px] lg:h-[137px]" viewBox="0 0 180 137" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg className="opacity-0 hidden lg:block absolute bottom-[-50px] left-[50%] translate-x-[-50%] z-10 lg:w-[180px] lg:h-[137px]" viewBox="0 0 180 137" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M90 -13.9326C123.137 -13.9326 150 12.9303 150 46.0674C150 79.2045 123.137 106.067 90 106.067C56.8629 106.067 30 79.2045 30 46.0674C30 12.9303 56.8629 -13.9326 90 -13.9326Z" stroke="#C4FFF6" stroke-width="20"/>
                     <circle cx="90" cy="46.0673" r="70" stroke="#C4FFF6" stroke-width="20"/>
                     <circle cx="90" cy="46.0673" r="80" stroke="#C4FFF6" stroke-width="20"/>
                     </svg>
                 </div>
             </div>
-            <svg id="owealth-circle" className="opacity-0 absolute top-0 right-0 size-[100px] lg:w-[152px] lg:h-[122px]" viewBox="0 0 152 122" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg className="opacity-0 hidden lg:block absolute top-0 right-0 size-[100px] lg:w-[152px] lg:h-[122px]" viewBox="0 0 152 122" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M90 -28.0001C123.137 -28.0001 150 -1.13721 150 31.9999C150 65.137 123.137 91.9999 90 91.9999C56.8629 91.9999 30 65.137 30 31.9999C30 -1.13721 56.8629 -28.0001 90 -28.0001Z" stroke="#C4FFF6" stroke-width="20"/>
             <circle cx="90" cy="31.9998" r="70" stroke="#C4FFF6" stroke-width="20"/>
             <circle cx="90" cy="32" r="80" stroke="#C4FFF6" stroke-width="20"/>
             </svg>
         </div>
-        <div id="service-cards-con" className="w-full h-dvh flex items-center justify-center">
-            <div className="w-[80%] py-20 px-12 bg-[#C4C4C480] shadow-md rounded-[20px] flex items-center justify-center gap-5 flex-wrap">
-                <ServiceCard svg title="Get Opay Card with pickup / delivery options." description="We’ll send it to your preferred location." />
-                <ServiceCard svg title="Bill Payment" description="Pay for electricity, wastebill, TV Subscription, .e.t.c." />
-                <ServiceCard svg title="Enjoy Seamless Transactions" description="Make business transactions, money transfer and borrow from friends." />
-                <ServiceCard svg title="Virtual Card" description="Apply for virtual card and start using it for payment." />
-                <ServiceCard svg title="Savings Settings" description="Safelock and Auto-Investment Option." />
+        <div id="service-cards-con" className="w-full flex items-center justify-center lg:mt-[120px]">
+            <div className="w-full lg:w-[80%] relative">
+            <div className="w-full py-20 px-[10%] lg:px-12 bg-[#C4C4C480] lg:shadow-lg lg:rounded-[20px] flex items-center justify-center gap-5 flex-wrap z-100">
+                <ServiceCard imgUrl="/assets/images/card-icon.png" title="Get Opay Card with pickup / delivery options." description="We’ll send it to your preferred location." />
+                <ServiceCard imgUrl="/assets/images/card-icon.png" title="Bill Payment" description="Pay for electricity, wastebill, TV Subscription, .e.t.c." />
+                <ServiceCard imgUrl="/assets/images/card-icon.png" title="Enjoy Seamless Transactions" description="Make business transactions, money transfer and borrow from friends." />
+                <ServiceCard imgUrl="/assets/images/card-icon.png" title="Virtual Card" description="Apply for virtual card and start using it for payment." />
+                <ServiceCard imgUrl="/assets/images/card-icon.png" title="Savings Settings" description="Safelock and Auto-Investment Option." />
+            </div>
+            <div className="hidden lg:block w-[95%] h-[20px] bg-[#C4C4C480] shadow-lg lg:rounded-b-[20px] absolute left-[50%] translate-x-[-50%] bottom-[-20px] z-10"></div>
             </div>
         </div>
     </section>
