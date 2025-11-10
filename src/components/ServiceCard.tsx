@@ -1,5 +1,3 @@
-import React from 'react'
-
 const ServiceCard = ({imgUrl, title, description}:{imgUrl: string; title: string; description: string;}) => {
   return (
     <div id='service-card' className='opacity-0 scale-50 w-[394px] bg-white p-5 rounded-xl shadow-sm flex items-start gap-4'>

@@ -1,5 +1,3 @@
-import React from 'react'
-
 const TestimonialCard = () => {
   return (
     <div id='testimonial-card' className='opacity-0 scale-75 w-full md:w-[304px] rounded-[8px] bg-[#F8F8F8] p-5 relative'>
