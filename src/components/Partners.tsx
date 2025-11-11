@@ -13,10 +13,24 @@ const Partners = () => {
             repeat: -1,
             scrollTrigger: {
                 trigger: "#partners-con",
+                start: "top center",
+                toggleActions: "play pause resume pause",
+              },
+          });
+
+        gsap.to(".partner-logo", {
+            opacity: 1,
+            scale: 1,
+            ease: "power2.inOut", 
+            duration: 1, 
+            stagger: 0.2,
+            scrollTrigger: {
+                trigger: "#partners-con",
                 start: "top bottom",
                 toggleActions: "play pause resume pause",
               },
           });
+
     }, [])
 
   return (
@@ -26,16 +40,16 @@ const Partners = () => {
         </div>
         <div className="w-full overflow-hidden mt-5">
             <div className='w-fit partners-track flex items-center gap-[50px] whitespace-nowrap'>
-            <div className="partner size-[160px] flex items-center justify-center"><img className='object-contain  grayscale-100 opacity-80 transition-all duration-300 ease-in-out hover:opacity-100 hover:grayscale-0 hover:scale-110' src='/assets/images/world-remit.png'/></div>
-            <div className="partner size-[160px] flex items-center justify-center"><img className='object-contain  grayscale-100 opacity-80 transition-all duration-300 ease-in-out hover:opacity-100 hover:grayscale-0 hover:scale-110' src='/assets/images/interswitch.png' /></div>
-            <div className="partner size-[160px] flex items-center justify-center"><img className='object-contain  grayscale-100 opacity-80 transition-all duration-300 ease-in-out hover:opacity-100 hover:grayscale-0 hover:scale-110' src='/assets/images/guinness.png'/></div>
-            <div className="partner size-[160px] flex items-center justify-center"><img className='object-contain  grayscale-100 opacity-80 transition-all duration-300 ease-in-out hover:opacity-100 hover:grayscale-0 hover:scale-110' src='/assets/images/world-remit.png'/></div>
-            <div className="partner size-[160px] flex items-center justify-center"><img className='object-contain  grayscale-100 opacity-80 transition-all duration-300 ease-in-out hover:opacity-100 hover:grayscale-0 hover:scale-110' src='/assets/images/interswitch.png' /></div>
-            <div className="partner size-[160px] flex items-center justify-center"><img className='object-contain  grayscale-100 opacity-80 transition-all duration-300 ease-in-out hover:opacity-100 hover:grayscale-0 hover:scale-110' src='/assets/images/guinness.png'/></div>
-            <div className="partner size-[160px] flex items-center justify-center"><img className='object-contain  grayscale-100 opacity-80 transition-all duration-300 ease-in-out hover:opacity-100 hover:grayscale-0 hover:scale-110' src='/assets/images/world-remit.png'/></div>
-            <div className="partner size-[160px] flex items-center justify-center"><img className='object-contain  grayscale-100 opacity-80 transition-all duration-300 ease-in-out hover:opacity-100 hover:grayscale-0 hover:scale-110' src='/assets/images/interswitch.png' /></div>
-            <div className="partner size-[160px] flex items-center justify-center"><img className='object-contain  grayscale-100 opacity-80 transition-all duration-300 ease-in-out hover:opacity-100 hover:grayscale-0 hover:scale-110' src='/assets/images/guinness.png'/></div>
-            <div className="partner size-[160px] flex items-center justify-center"><img className='object-contain  grayscale-100 opacity-80 transition-all duration-300 ease-in-out hover:opacity-100 hover:grayscale-0 hover:scale-110' src='/assets/images/world-remit.png'/></div>
+            <div className="size-[160px] flex items-center justify-center"><img className='partner-logo object-contain grayscale-100 opacity-0 scale-50 hover:grayscale-0' src='/assets/images/world-remit.png'/></div>
+            <div className="size-[160px] flex items-center justify-center"><img className='partner-logo object-contain grayscale-100 opacity-0 scale-50 hover:grayscale-0' src='/assets/images/interswitch.png' /></div>
+            <div className="size-[160px] flex items-center justify-center"><img className='partner-logo object-contain grayscale-100 opacity-0 scale-50 hover:grayscale-0' src='/assets/images/guinness.png'/></div>
+            <div className="size-[160px] flex items-center justify-center"><img className='partner-logo object-contain grayscale-100 opacity-0 scale-50 hover:grayscale-0' src='/assets/images/world-remit.png'/></div>
+            <div className="size-[160px] flex items-center justify-center"><img className='partner-logo object-contain grayscale-100 opacity-0 scale-75 hover:grayscale-0' src='/assets/images/interswitch.png' /></div>
+            <div className="size-[160px] flex items-center justify-center"><img className='partner-logo object-contain grayscale-100 opacity-0 scale-75 hover:grayscale-0' src='/assets/images/guinness.png'/></div>
+            <div className="size-[160px] flex items-center justify-center"><img className='partner-logo object-contain grayscale-100 opacity-0 scale-75 hover:grayscale-0' src='/assets/images/world-remit.png'/></div>
+            <div className="size-[160px] flex items-center justify-center"><img className='partner-logo object-contain grayscale-100 opacity-0 scale-75 hover:grayscale-0' src='/assets/images/interswitch.png' /></div>
+            <div className="size-[160px] flex items-center justify-center"><img className='partner-logo object-contain grayscale-100 opacity-0 scale-50 hover:grayscale-0' src='/assets/images/guinness.png'/></div>
+            <div className="size-[160px] flex items-center justify-center"><img className='partner-logo object-contain grayscale-100 opacity-0 scale-50 hover:grayscale-0' src='/assets/images/world-remit.png'/></div>
             </div>
         </div>
         </section>
