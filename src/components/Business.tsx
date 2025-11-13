@@ -1,0 +1,112 @@
+import { useGSAP } from "@gsap/react"
+import gsap from "gsap"
+import { ScrollTrigger } from "gsap/all";
+gsap.registerPlugin(ScrollTrigger);
+const Business = () => {
+    useGSAP(() => {
+        gsap.to('#business-card', {
+            opacity: 1,
+            scale: 1,
+            duration: 1,
+            ease: 'power2.inOut',
+            stagger: 0.2,
+            scrollTrigger: {
+              trigger: '#business-con',
+              start: 'top center',
+            }
+          })
+          gsap.to('#business-img', {
+            opacity: 1,
+            scale: 1,
+            duration: 1,
+            ease: 'power2.inOut',
+            stagger: 0.2,
+            scrollTrigger: {
+              trigger: '#business-con',
+              start: 'top center',
+            }
+          })
+          gsap.fromTo('.business-svg',
+            { drawSVG: "0% 0%" },
+            {
+              duration: 3,
+              ease: 'power2.inOut',
+              drawSVG: "0% 100%",
+              scrollTrigger: {
+                trigger: '#business-con',
+                start: 'top center',
+              },
+            }
+          );
+    }, [])
+  return (
+    <section id="business-con" className="w-full py-[60px] flex items-center justify-center relative">
+    <div className="w-[85%]">
+        <div className="w-full flex flex-col lg:flex-row items-center justify-between">
+            <div className="w-full lg:w-[50%]">
+                <h3 className="text-[32px] lg:text-[40px] font-raleway text-primary-green font-extrabold max-w-[690px]">Opay Business</h3>
+                <p className="text-[20px] lg:text-[24px] font-raleway text-[#333333] font-normal mb-10 max-w-[690px]">Get omnichannel payment solutions to grow your business better!</p>
+                <div className="w-full flex items-center flex-wrap gap-5">
+                <div id="business-card" className="w-full lg:w-[280px] px-6 py-5 rounded-2xl bg-[#EBEBEB] shadow-xs opacity-0 scale-50">
+                <h6 className="text-[18px] lg:text-[20px] font-raleway text-primary-purple font-bold mb-1">Ominichannel Payment</h6>
+                <p className="text-[14px] lg:text-[16px] font-nunito-sans text-[#333333] font-normal">Make payment collection safer, easier and faster via multiple channels.</p>
+                </div>
+                <div id="business-card" className="w-full lg:w-[280px] px-6 py-5 rounded-2xl bg-[#EBEBEB] shadow-xs opacity-0 scale-50">
+                <h6 className="text-[18px] lg:text-[20px] font-raleway text-primary-purple font-bold mb-1">Industrial Payment Solutions</h6>
+                <p className="text-[14px] lg:text-[16px] font-nunito-sans text-[#333333] font-normal">Get a customized payment solution for your business</p>
+                </div>
+                <div id="business-card" className="w-full lg:w-[280px] px-6 py-5 rounded-2xl bg-[#EBEBEB] shadow-xs opacity-0 scale-50">
+                <h6 className="text-[18px] lg:text-[20px] font-raleway text-primary-purple font-bold mb-1">Banking & Bill Payments</h6>
+                <p className="text-[14px] lg:text-[16px] font-nunito-sans text-[#333333] font-normal">Enjoy financial inclusion and efficiency with the largest banking agent network.</p>
+                </div>
+                <div id="business-card" className="w-full lg:w-[280px] px-6 py-5 rounded-2xl bg-[#EBEBEB] shadow-xs opacity-0 scale-50">
+                <h6 className="text-[18px] lg:text-[20px] font-raleway text-primary-purple font-bold mb-1">Online Sales & Marketing</h6>
+                <p className="text-[14px] lg:text-[16px] font-nunito-sans text-[#333333] font-normal">Online Sales & Marketing Expand your sales channels from offline to online</p>
+                </div>
+                </div>
+            </div>
+            <div className="w-full lg:w-[50%] flex items-center lg:items-end justify-center lg:justify-end mt-10 lg:mt-0">
+                <img id="business-img" className="opacity-0 scale-50 w-full lg:w-[500px]" src="/assets/images/pos-terminal.png" alt="Shield" />
+            </div>
+        </div>
+    </div>
+    <svg className="w-full absolute left-0 top-[50%] translate-y-[-50%] z-10" width="1509" height="534" viewBox="0 0 1509 534" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path className="business-svg" d="M0.0750732 533.075L173.031 491.116C281.572 464.783 394.75 464.057 503.62 488.993L566.694 503.44C651.385 522.839 739.737 519.09 822.481 492.586C907.235 465.438 997.832 462.176 1084.32 483.158L1114.65 490.517C1229.03 518.265 1349.06 511.481 1459.59 471.022L1514.08 451.075" stroke="#1DC99B" stroke-opacity="0.6" stroke-width="0.15" stroke-linecap="round"/>
+<path className="business-svg" d="M0.0750732 520.075L173.031 478.116C281.572 451.783 394.75 451.057 503.62 475.993L566.694 490.44C651.385 509.839 739.737 506.09 822.481 479.586C907.235 452.438 997.832 449.176 1084.32 470.158L1114.65 477.517C1229.03 505.265 1349.06 498.481 1459.59 458.022L1514.08 438.075" stroke="#1DC99B" stroke-opacity="0.6" stroke-width="0.15" stroke-linecap="round"/>
+<path className="business-svg" d="M0.0750732 488.075L173.031 446.116C281.572 419.783 394.75 419.057 503.62 443.993L566.694 458.44C651.385 477.839 739.737 474.09 822.481 447.586C907.235 420.438 997.832 417.176 1084.32 438.158L1114.65 445.517C1229.03 473.265 1349.06 466.481 1459.59 426.022L1514.08 406.075" stroke="#1DC99B" stroke-opacity="0.6" stroke-width="0.15" stroke-linecap="round"/>
+<path className="business-svg" d="M0.0750732 475.075L173.031 433.116C281.572 406.783 394.75 406.057 503.62 430.993L566.694 445.44C651.385 464.839 739.737 461.09 822.481 434.586C907.235 407.438 997.832 404.176 1084.32 425.158L1114.65 432.517C1229.03 460.265 1349.06 453.481 1459.59 413.022L1514.08 393.075" stroke="#1DC99B" stroke-opacity="0.6" stroke-width="0.15" stroke-linecap="round"/>
+<path className="business-svg" d="M0.0750732 526.075L173.031 484.116C281.572 457.783 394.75 457.057 503.62 481.993L566.694 496.44C651.385 515.839 739.737 512.09 822.481 485.586C907.235 458.438 997.832 455.176 1084.32 476.158L1114.65 483.517C1229.03 511.265 1349.06 504.481 1459.59 464.022L1514.08 444.075" stroke="#1DC99B" stroke-opacity="0.6" stroke-width="0.15" stroke-linecap="round"/>
+<path className="business-svg" d="M0.0750732 513.075L173.031 471.116C281.572 444.783 394.75 444.057 503.62 468.993L566.694 483.44C651.385 502.839 739.737 499.09 822.481 472.586C907.235 445.438 997.832 442.176 1084.32 463.158L1114.65 470.517C1229.03 498.265 1349.06 491.481 1459.59 451.022L1514.08 431.075" stroke="#1DC99B" stroke-opacity="0.6" stroke-width="0.15" stroke-linecap="round"/>
+<path className="business-svg" d="M0.0750732 481.075L173.031 439.116C281.572 412.783 394.75 412.057 503.62 436.993L566.694 451.44C651.385 470.839 739.737 467.09 822.481 440.586C907.235 413.438 997.832 410.176 1084.32 431.158L1114.65 438.517C1229.03 466.265 1349.06 459.481 1459.59 419.022L1514.08 399.075" stroke="#1DC99B" stroke-opacity="0.6" stroke-width="0.15" stroke-linecap="round"/>
+<path className="business-svg" d="M0.0750732 468.075L173.031 426.116C281.572 399.783 394.75 399.057 503.62 423.993L566.694 438.44C651.385 457.839 739.737 454.09 822.481 427.586C907.235 400.438 997.832 397.176 1084.32 418.158L1114.65 425.517C1229.03 453.265 1349.06 446.481 1459.59 406.022L1514.08 386.075" stroke="#1DC99B" stroke-opacity="0.6" stroke-width="0.15" stroke-linecap="round"/>
+<path className="business-svg" d="M0.0750732 405.075L173.031 363.116C281.572 336.783 394.75 336.057 503.62 360.993L566.694 375.44C651.385 394.839 739.737 391.09 822.481 364.586C907.235 337.438 997.832 334.176 1084.32 355.158L1114.65 362.517C1229.03 390.265 1349.06 383.481 1459.59 343.022L1514.08 323.075" stroke="#1DC99B" stroke-opacity="0.6" stroke-width="0.15" stroke-linecap="round"/>
+<path className="business-svg" d="M0.0750732 392.075L173.031 350.116C281.572 323.783 394.75 323.057 503.62 347.993L566.694 362.44C651.385 381.839 739.737 378.09 822.481 351.586C907.235 324.438 997.832 321.176 1084.32 342.158L1114.65 349.517C1229.03 377.265 1349.06 370.481 1459.59 330.022L1514.08 310.075" stroke="#1DC99B" stroke-opacity="0.6" stroke-width="0.15" stroke-linecap="round"/>
+<path className="business-svg" d="M0.0750732 360.075L173.031 318.116C281.572 291.783 394.75 291.057 503.62 315.993L566.694 330.44C651.385 349.839 739.737 346.09 822.481 319.586C907.235 292.438 997.832 289.176 1084.32 310.158L1114.65 317.517C1229.03 345.265 1349.06 338.481 1459.59 298.022L1514.08 278.075" stroke="#1DC99B" stroke-opacity="0.6" stroke-width="0.15" stroke-linecap="round"/>
+<path className="business-svg" d="M0.0750732 347.075L173.031 305.116C281.572 278.783 394.75 278.057 503.62 302.993L566.694 317.44C651.385 336.839 739.737 333.09 822.481 306.586C907.235 279.438 997.832 276.176 1084.32 297.158L1114.65 304.517C1229.03 332.265 1349.06 325.481 1459.59 285.022L1514.08 265.075" stroke="#1DC99B" stroke-opacity="0.6" stroke-width="0.15" stroke-linecap="round"/>
+<path className="business-svg" d="M0.0750732 398.075L173.031 356.116C281.572 329.783 394.75 329.057 503.62 353.993L566.694 368.44C651.385 387.839 739.737 384.09 822.481 357.586C907.235 330.438 997.832 327.176 1084.32 348.158L1114.65 355.517C1229.03 383.265 1349.06 376.481 1459.59 336.022L1514.08 316.075" stroke="#1DC99B" stroke-opacity="0.6" stroke-width="0.15" stroke-linecap="round"/>
+<path className="business-svg" d="M0.0750732 385.075L173.031 343.116C281.572 316.783 394.75 316.057 503.62 340.993L566.694 355.44C651.385 374.839 739.737 371.09 822.481 344.586C907.235 317.438 997.832 314.176 1084.32 335.158L1114.65 342.517C1229.03 370.265 1349.06 363.481 1459.59 323.022L1514.08 303.075" stroke="#1DC99B" stroke-opacity="0.6" stroke-width="0.15" stroke-linecap="round"/>
+<path className="business-svg" d="M0.0750732 353.075L173.031 311.116C281.572 284.783 394.75 284.057 503.62 308.993L566.694 323.44C651.385 342.839 739.737 339.09 822.481 312.586C907.235 285.438 997.832 282.176 1084.32 303.158L1114.65 310.517C1229.03 338.265 1349.06 331.481 1459.59 291.022L1514.08 271.075" stroke="#1DC99B" stroke-opacity="0.6" stroke-width="0.15" stroke-linecap="round"/>
+<path className="business-svg" d="M0.0750732 340.075L173.031 298.116C281.572 271.783 394.75 271.057 503.62 295.993L566.694 310.44C651.385 329.839 739.737 326.09 822.481 299.586C907.235 272.438 997.832 269.176 1084.32 290.158L1114.65 297.517C1229.03 325.265 1349.06 318.481 1459.59 278.022L1514.08 258.075" stroke="#1DC99B" stroke-opacity="0.6" stroke-width="0.15" stroke-linecap="round"/>
+<path className="business-svg" d="M0.0750732 276.075L173.031 234.116C281.572 207.783 394.75 207.057 503.62 231.993L566.694 246.44C651.385 265.839 739.737 262.09 822.481 235.586C907.235 208.438 997.832 205.176 1084.32 226.158L1114.65 233.517C1229.03 261.265 1349.06 254.481 1459.59 214.022L1514.08 194.075" stroke="#1DC99B" stroke-opacity="0.6" stroke-width="0.15" stroke-linecap="round"/>
+<path className="business-svg" d="M0.0750732 263.075L173.031 221.116C281.572 194.783 394.75 194.057 503.62 218.993L566.694 233.44C651.385 252.839 739.737 249.09 822.481 222.586C907.235 195.438 997.832 192.176 1084.32 213.158L1114.65 220.517C1229.03 248.265 1349.06 241.481 1459.59 201.022L1514.08 181.075" stroke="#1DC99B" stroke-opacity="0.6" stroke-width="0.15" stroke-linecap="round"/>
+<path className="business-svg" d="M0.0750732 231.075L173.031 189.116C281.572 162.783 394.75 162.057 503.62 186.993L566.694 201.44C651.385 220.839 739.737 217.09 822.481 190.586C907.235 163.438 997.832 160.176 1084.32 181.158L1114.65 188.517C1229.03 216.265 1349.06 209.481 1459.59 169.022L1514.08 149.075" stroke="#1DC99B" stroke-opacity="0.6" stroke-width="0.15" stroke-linecap="round"/>
+<path className="business-svg" d="M0.0750732 218.075L173.031 176.116C281.572 149.783 394.75 149.057 503.62 173.993L566.694 188.44C651.385 207.839 739.737 204.09 822.481 177.586C907.235 150.438 997.832 147.176 1084.32 168.158L1114.65 175.517C1229.03 203.265 1349.06 196.481 1459.59 156.022L1514.08 136.075" stroke="#1DC99B" stroke-opacity="0.6" stroke-width="0.15" stroke-linecap="round"/>
+<path className="business-svg" d="M0.0750732 269.075L173.031 227.116C281.572 200.783 394.75 200.057 503.62 224.993L566.694 239.44C651.385 258.839 739.737 255.09 822.481 228.586C907.235 201.438 997.832 198.176 1084.32 219.158L1114.65 226.517C1229.03 254.265 1349.06 247.481 1459.59 207.022L1514.08 187.075" stroke="#1DC99B" stroke-opacity="0.6" stroke-width="0.15" stroke-linecap="round"/>
+<path className="business-svg" d="M0.0750732 256.075L173.031 214.116C281.572 187.783 394.75 187.057 503.62 211.993L566.694 226.44C651.385 245.839 739.737 242.09 822.481 215.586C907.235 188.438 997.832 185.176 1084.32 206.158L1114.65 213.517C1229.03 241.265 1349.06 234.481 1459.59 194.022L1514.08 174.075" stroke="#1DC99B" stroke-opacity="0.6" stroke-width="0.15" stroke-linecap="round"/>
+<path className="business-svg" d="M0.0750732 224.075L173.031 182.116C281.572 155.783 394.75 155.057 503.62 179.993L566.694 194.44C651.385 213.839 739.737 210.09 822.481 183.586C907.235 156.438 997.832 153.176 1084.32 174.158L1114.65 181.517C1229.03 209.265 1349.06 202.481 1459.59 162.022L1514.08 142.075" stroke="#1DC99B" stroke-opacity="0.6" stroke-width="0.15" stroke-linecap="round"/>
+<path className="business-svg" d="M0.0750732 211.075L173.031 169.116C281.572 142.783 394.75 142.057 503.62 166.993L566.694 181.44C651.385 200.839 739.737 197.09 822.481 170.586C907.235 143.438 997.832 140.176 1084.32 161.158L1114.65 168.517C1229.03 196.265 1349.06 189.481 1459.59 149.022L1514.08 129.075" stroke="#1DC99B" stroke-opacity="0.6" stroke-width="0.15" stroke-linecap="round"/>
+<path className="business-svg" d="M0.0750732 147.075L173.031 105.116C281.572 78.7831 394.75 78.0565 503.62 102.993L566.694 117.44C651.385 136.839 739.737 133.09 822.481 106.586C907.235 79.438 997.832 76.176 1084.32 97.158L1114.65 104.517C1229.03 132.265 1349.06 125.481 1459.59 85.0216L1514.08 65.0752" stroke="#1DC99B" stroke-opacity="0.6" stroke-width="0.15" stroke-linecap="round"/>
+<path className="business-svg" d="M0.0750732 134.075L173.031 92.1155C281.572 65.7831 394.75 65.0565 503.62 89.9933L566.694 104.44C651.385 123.839 739.737 120.09 822.481 93.5858C907.235 66.438 997.832 63.176 1084.32 84.158L1114.65 91.5165C1229.03 119.265 1349.06 112.481 1459.59 72.0216L1514.08 52.0752" stroke="#1DC99B" stroke-opacity="0.6" stroke-width="0.15" stroke-linecap="round"/>
+<path className="business-svg" d="M0.0750732 102.075L173.031 60.1155C281.572 33.7831 394.75 33.0565 503.62 57.9933L566.694 72.4403C651.385 91.839 739.737 88.0897 822.481 61.5858C907.235 34.438 997.832 31.176 1084.32 52.158L1114.65 59.5165C1229.03 87.265 1349.06 80.4808 1459.59 40.0216L1514.08 20.0752" stroke="#1DC99B" stroke-opacity="0.6" stroke-width="0.15" stroke-linecap="round"/>
+<path className="business-svg" d="M0.0750732 89.0752L173.031 47.1155C281.572 20.7831 394.75 20.0565 503.62 44.9933L566.694 59.4403C651.385 78.839 739.737 75.0897 822.481 48.5858C907.235 21.438 997.832 18.176 1084.32 39.158L1114.65 46.5165C1229.03 74.265 1349.06 67.4808 1459.59 27.0216L1514.08 7.0752" stroke="#1DC99B" stroke-opacity="0.6" stroke-width="0.15" stroke-linecap="round"/>
+<path className="business-svg" d="M0.0750732 140.075L173.031 98.1155C281.572 71.7831 394.75 71.0565 503.62 95.9933L566.694 110.44C651.385 129.839 739.737 126.09 822.481 99.5858C907.235 72.438 997.832 69.176 1084.32 90.158L1114.65 97.5165C1229.03 125.265 1349.06 118.481 1459.59 78.0216L1514.08 58.0752" stroke="#1DC99B" stroke-opacity="0.6" stroke-width="0.15" stroke-linecap="round"/>
+<path className="business-svg" d="M0.0750732 127.075L173.031 85.1155C281.572 58.7831 394.75 58.0565 503.62 82.9933L566.694 97.4403C651.385 116.839 739.737 113.09 822.481 86.5858C907.235 59.438 997.832 56.176 1084.32 77.158L1114.65 84.5165C1229.03 112.265 1349.06 105.481 1459.59 65.0216L1514.08 45.0752" stroke="#1DC99B" stroke-opacity="0.6" stroke-width="0.15" stroke-linecap="round"/>
+<path className="business-svg" d="M0.0750732 95.0752L173.031 53.1155C281.572 26.7831 394.75 26.0565 503.62 50.9933L566.694 65.4403C651.385 84.839 739.737 81.0897 822.481 54.5858C907.235 27.438 997.832 24.176 1084.32 45.158L1114.65 52.5165C1229.03 80.265 1349.06 73.4808 1459.59 33.0216L1514.08 13.0752" stroke="#1DC99B" stroke-opacity="0.6" stroke-width="0.15" stroke-linecap="round"/>
+<path className="business-svg" d="M0.0750732 82.0752L173.031 40.1155C281.572 13.7831 394.75 13.0565 503.62 37.9933L566.694 52.4403C651.385 71.839 739.737 68.0897 822.481 41.5858C907.235 14.438 997.832 11.176 1084.32 32.158L1114.65 39.5165C1229.03 67.265 1349.06 60.4808 1459.59 20.0216L1514.08 0.0751953" stroke="#1DC99B" stroke-opacity="0.6" stroke-width="0.15" stroke-linecap="round"/>
+</svg>
+
+    </section>
+  )
+}
+
+export default Business

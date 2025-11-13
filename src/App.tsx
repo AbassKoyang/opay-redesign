@@ -5,6 +5,9 @@ import Services from './components/Services'
 import Testimonials from './components/Testimonials'
 import Partners from './components/Partners'
 import Safety from './components/Safety'
+import HowItWorks from './components/HowItWorks'
+import Business from './components/Business'
+import FAQ from './components/FAQ'
 
 function App() {
   return (
@@ -15,6 +18,9 @@ function App() {
       <Testimonials />
       <Partners />
       <Safety />
+      <HowItWorks />
+      <Business />
+      <FAQ/>
     </section>
   )
 }

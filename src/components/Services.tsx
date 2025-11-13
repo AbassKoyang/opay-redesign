@@ -2,9 +2,10 @@ import { useGSAP } from "@gsap/react"
 import gsap from 'gsap';
 import { ScrollTrigger } from "gsap/all";
 import ServiceCard from "./ServiceCard";
+gsap.registerPlugin(ScrollTrigger);
+
 
 const Services = () => {
-    gsap.registerPlugin(ScrollTrigger);
     useGSAP(() => {
         const textTl = gsap.timeline({
             scrollTrigger: {

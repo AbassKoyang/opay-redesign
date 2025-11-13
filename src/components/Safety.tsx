@@ -62,7 +62,7 @@ const Safety = () => {
                     </div>
                 </div>
                 <div className="w-full lg:w-[50%] flex items-center justify-center lg:justify-end mt-10 lg:mt-0">
-                    <img id="safety-img" className="opacity-0 scale-50 w-[300px] lg:w-[500px]" src="/assets/images/shield.png" alt="Shield" />
+                    <img id="safety-img" className="opacity-0 scale-50 w-full lg:w-[500px]" src="/assets/images/shield.png" alt="Shield" />
                 </div>
             </div>
         </div>
