@@ -2,7 +2,7 @@ import { Copyright, Facebook, Instagram, Linkedin, Mail, Phone, Twitter, Youtube
 
 const Footer = () => {
   return (
-    <footer className="w-full px-16 pt-16 mt-[60px] bg-[#333333]">
+    <footer className="w-full px-8 pt-8 lg:px-16 lg:pt-16 mt-[60px] bg-[#333333]">
         <div className="w-full flex flex-col lg:flex-row items-start justify-between bg-[#333333] gap-8 lg:gap-0">
         <div className="">
             <h6 className="text-[20px lg:text-[24px] font-bold text-white font-raleway">Contact Info</h6>
@@ -10,13 +10,13 @@ const Footer = () => {
                 <div className="size-[40px] lg:size-[50px] bg-white flex items-center justify-center rounded-full">
                     <Mail className="text-primary-green" />
                 </div>
-                <p className="text-[20px] lg:text-[24px] font-normal text-white font-nunito-sans">ng-support@opay-inc.com</p>
+                <p className="max-w-[200px] lg:max-w-fit text-[20px] lg:text-[24px] font-normal text-white font-nunito-sans">ng-support@opay-inc.com</p>
             </div>
             <div className="flex items-center gap-5 mt-8">
                 <div className="size-[40px] lg:size-[50px] bg-white flex items-center justify-center rounded-full">
                     <Phone className="text-primary-green" />
                 </div>
-                <p className="text-[20px] lg:text-[24px] font-normal text-white font-nunito-sans">0700 888 8328, 0700 888 8328</p>
+                <p className="max-w-[200px] lg:max-w-fit text-[20px] lg:text-[24px] font-normal text-white font-nunito-sans">0700 888 8328, 0700 888 8328</p>
             </div>
         </div>
         <div className="">
