@@ -11,7 +11,6 @@ import FAQ from './components/FAQ'
 import Download from './components/Download'
 import Footer from './components/Footer'
 import { Toaster } from 'sonner'
-import { Bot } from 'lucide-react'
 import AgentButton from './components/AgentButton'
 
 function App() {

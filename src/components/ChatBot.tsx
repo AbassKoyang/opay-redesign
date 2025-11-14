@@ -1,7 +1,7 @@
 import { useRef, useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Textarea } from '@/components/ui/textarea';
-import { Send, Loader2, Bot, ChevronLeft, User } from 'lucide-react';
+import { Send, Loader2, ChevronLeft, Bot } from 'lucide-react';
 import ReactMarkdown  from 'react-markdown';
 import {useQuery} from '@tanstack/react-query';
 import {mastraClient} from '@/lib/mastra-client';
