@@ -44,7 +44,7 @@ const Hero = () => {
     }, [])
   return (
     <section className="w-full min-h-dvh bg-[url(/assets/images/background-img.png)] flex items-center justify-center overflow-hidden relative">
-        <div className="mt-[-50px] lg:mt-[170px] flex flex-col justify-center items-center">
+        <div className="mt-[-50px] lg:mt-[170px] flex flex-col justify-center items-center z-50">
             <h1 id='title' className="hero-text-animation max-w-[320px] lg:max-w-full opacity-0 text-[28px] lg:text-[48px] font-raleway font-extrabold text-primary-green text-center"><span id='special-word' className="text-primary-purple font-pacifico"> Redefining</span> the Future of Finance</h1>
             <p id='sub-title' className="hero-text-animation max-w-[320px] lg:max-w-full opacity-0 text-[#333333] text-[18px] lg:text-[20px] font-nunito-sans mt-1 text-center">Manage, invest, and grow your money effortlessly with opay</p>
             <div id='hero-ctas' className="hero-text-animation opacity-0 w-full flex items-center justify-center gap-2 mt-5">

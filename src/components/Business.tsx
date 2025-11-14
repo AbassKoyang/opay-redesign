@@ -40,8 +40,8 @@ const Business = () => {
           );
     }, [])
   return (
-    <section id="business-con" className="w-full py-[60px] flex items-center justify-center relative">
-    <div className="w-[85%]">
+    <section className="w-full py-[60px] flex items-center justify-center relative">
+    <div id="business-con"  className="w-[85%]">
         <div className="w-full flex flex-col lg:flex-row items-center justify-between">
             <div className="w-full lg:w-[50%]">
                 <h3 className="text-[32px] lg:text-[40px] font-raleway text-primary-green font-extrabold max-w-[690px]">Opay Business</h3>

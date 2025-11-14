@@ -100,7 +100,7 @@ const Testimonials = () => {
         <path className='testimonial-svg' d="M-29 82.075L143.956 40.1153C252.497 13.7829 365.675 13.0563 474.545 37.993L537.618 52.4401C622.31 71.8388 710.662 68.0895 793.406 41.5855C878.16 14.4378 968.757 11.1757 1055.24 32.1578L1085.58 39.5163C1199.95 67.2647 1319.99 60.4805 1430.51 20.0213L1485 0.0749512" stroke="#1DC99B" stroke-opacity="0.6" stroke-width="0.15" stroke-linecap="round"/>
         </svg>
 
-        <div className="w-[85%] z-20 flex items-center justify-center flex-col">
+        <div id='testimonials-con'  className="w-[85%] z-20 flex items-center justify-center flex-col">
             <p className="text-[16px] lg:text-[20px] font-nunito-sans text-[#333333] text-center">Testimonials</p>
             <h3 className="text-[32px] max-w-[280px] lg:max-w-fit lg:text-[40px] font-raleway text-primary-purple text-center font-extrabold">What Our Customers Say</h3>
         </div>

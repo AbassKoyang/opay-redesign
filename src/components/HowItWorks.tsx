@@ -18,11 +18,11 @@ const HowItWorks = () => {
         })
     }, [])
   return (
-    <section id='how-it-works-con' className="py-[60px] w-full h-fit bg-white flex flex-col items-center justify-center relative">    
-        <div className="w-[85%] z-20 flex items-center justify-center flex-col">
+    <section className="py-[60px] w-full h-fit bg-white flex flex-col items-center justify-center relative">    
+        <div id='how-it-works-con' className="w-[85%] z-20 flex items-center justify-center flex-col">
             <p className="text-[16px] lg:text-[20px] font-nunito-sans text-[#333333] text-center">How it works</p>
         </div>
-        <div className="w-[85%] flex flex-col lg:flex-row items-center lg:justify-between rounded-2xl bg-[#EBEBEB] p-6 mt-10 lg:mt-20">
+        <div  className="w-[85%] flex flex-col lg:flex-row items-center lg:justify-between rounded-2xl bg-[#EBEBEB] p-6 mt-10 lg:mt-20">
             <div className="w-full lg:w-[35%]">
                 <h6 className="text-[#333333] text-[20px] lg:text-[24px] font-nunito-sans font-bold">Guideline:-</h6>
                 <div id='guideline-texts' className="opacity-0 translate-y-[30px] mt-5 w-full flex flex-col lg:flex-row lg:items-start lg:justify-between">

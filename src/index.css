@@ -141,3 +141,21 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+.scrollbar-hide {
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; 
+}
+
+.skeleton{
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  background-image: linear-gradient(90deg, #e9e9ef 0%, #f5f6fa 40%, #e9e9ef 80%);
+  background-size: 200% 100%;
+  animation: skeleton-shimmer 1.2s linear infinite;
+}

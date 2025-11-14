@@ -27,15 +27,14 @@ const Partners = () => {
             scrollTrigger: {
                 trigger: "#partners-con",
                 start: "top bottom",
-                toggleActions: "play pause resume pause",
               },
           });
 
     }, [])
 
   return (
-    <section id='partners-con' className="py-[60px] w-full h-fit bg-white flex flex-col items-center justify-center relative">    
-        <div className="w-[85%] z-20 flex items-center justify-center flex-col">
+    <section  className="py-[60px] w-full h-fit bg-white flex flex-col items-center justify-center relative">    
+        <div id='partners-con' className="w-[85%] z-20 flex items-center justify-center flex-col">
             <p className="text-[16px] lg:text-[20px] font-nunito-sans text-[#333333] text-center">Partner With</p>
         </div>
         <div className="w-full overflow-hidden mt-5">
