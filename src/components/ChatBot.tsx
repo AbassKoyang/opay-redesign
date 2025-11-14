@@ -1,4 +1,3 @@
-'use client';
 import { useRef, useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Textarea } from '@/components/ui/textarea';
@@ -8,7 +7,6 @@ import {useQuery} from '@tanstack/react-query';
 import {mastraClient} from '@/lib/mastra-client';
 import { toast } from 'sonner';
 import { useUserId } from '@/lib/hooks/useUserId';
-import type { MemoryThread } from 'node_modules/@mastra/client-js/dist/resources';
 
 interface Message {
 content: string;
