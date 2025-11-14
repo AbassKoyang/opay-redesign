@@ -8,6 +8,8 @@ import Safety from './components/Safety'
 import HowItWorks from './components/HowItWorks'
 import Business from './components/Business'
 import FAQ from './components/FAQ'
+import Download from './components/Download'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
       <HowItWorks />
       <Business />
       <FAQ/>
+      <Download />
+      <Footer />
     </section>
   )
 }

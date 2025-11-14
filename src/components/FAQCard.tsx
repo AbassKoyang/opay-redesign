@@ -5,9 +5,9 @@ const FAQCard = ({text}:{text: string}) => {
   return (
     <div id='faq-card' className='bg-white w-full scale-50 opacity-0'>
         <div className="w-full py-3 flex items-center justify-between">
-            <p className='text=[#333333] font-medium font-raleway text-[22px] lg:text-[30px] lg:max-w-fit max-w-[280px]'>{text}</p>
+            <p className='text=[#333333] font-medium font-raleway text-[18px] lg:text-[30px] lg:max-w-fit max-w-[280px]'>{text}</p>
             <button onClick={() => setisOpen(!isOpen)} className='cursor-pointer flex items-center justify-center'>
-                <svg className='w-[25px] h-[27px] lg:w-[30] lg:h-[32px]' viewBox="0 0 30 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg className='w-[18px] h-[20px] lg:w-[30] lg:h-[32px]' viewBox="0 0 30 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M29.2383 12.4512V17.5488H0V12.4512H29.2383ZM17.3438 0V31.0547H11.9238V0H17.3438Z" fill="#1DC99B"/>
                 </svg>
             </button>

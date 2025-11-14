@@ -43,6 +43,14 @@ const FAQ = () => {
             <FAQCard text="Does Opay have virtual card?" />
             <FAQCard text="How can i collect my ATM Card?" />
         </div>
+        <div className="w-[85%] gap-4 mt-1 z-20 flex items-center justify-center">
+            <div className="size-[70px] rounded-full bg-white p-1 flex items-center justify-center">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11.6667 15H25V11.6667H11.6667V15ZM11.6667 21.6667H20V18.3333H11.6667V21.6667ZM28.3333 33.3333V28.3333H23.3333V25H28.3333V20H31.6667V25H36.6667V28.3333H31.6667V33.3333H28.3333ZM5 33.3333V8.33334C5 7.41667 5.32667 6.63167 5.98 5.97834C6.63333 5.325 7.41778 4.99889 8.33333 5H28.3333C29.25 5 30.035 5.32667 30.6883 5.98C31.3417 6.63334 31.6678 7.41778 31.6667 8.33334V16.7917C31.3889 16.7361 31.1111 16.7011 30.8333 16.6867C30.5556 16.6722 30.2778 16.6656 30 16.6667C27.1944 16.6667 24.8261 17.6389 22.895 19.5833C20.9639 21.5278 19.9989 23.8889 20 26.6667C20 26.9444 20.0072 27.2222 20.0217 27.5C20.0361 27.7778 20.0706 28.0556 20.125 28.3333H10L5 33.3333Z" fill="#1DC99B"/>
+            </svg>
+            </div>
+            <h5 className="text-[20px] lg:text-[27px] text-primary-green font-raleway underline">Ask Questions</h5>
+        </div>
         <svg className="w-full absolute left-0 top-[50%] translate-y-[-50%] z-10" width="1509" height="534" viewBox="0 0 1509 534" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path className="faq-svg" d="M0.0750732 533.075L173.031 491.116C281.572 464.783 394.75 464.057 503.62 488.993L566.694 503.44C651.385 522.839 739.737 519.09 822.481 492.586C907.235 465.438 997.832 462.176 1084.32 483.158L1114.65 490.517C1229.03 518.265 1349.06 511.481 1459.59 471.022L1514.08 451.075" stroke="#1DC99B" stroke-opacity="0.6" stroke-width="0.15" stroke-linecap="round"/>
 <path className="faq-svg" d="M0.0750732 520.075L173.031 478.116C281.572 451.783 394.75 451.057 503.62 475.993L566.694 490.44C651.385 509.839 739.737 506.09 822.481 479.586C907.235 452.438 997.832 449.176 1084.32 470.158L1114.65 477.517C1229.03 505.265 1349.06 498.481 1459.59 458.022L1514.08 438.075" stroke="#1DC99B" stroke-opacity="0.6" stroke-width="0.15" stroke-linecap="round"/>
