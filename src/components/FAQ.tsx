@@ -36,7 +36,7 @@ const FAQ = () => {
             <p className="text-[16px] lg:text-[20px] font-nunito-sans text-[#333333] text-center">FAQs</p>
             <h3 className="text-[32px] lg:text-[40px] font-raleway text-primary-purple text-center font-extrabold">Commonly Asked Questions</h3>
         </div>
-        <div className="w-[85%] max-w-[900px] mt-10 z-20 p-1 lg:p-3">
+        <div className="w-[85%] max-w-[900px] mt-10 z-20 p-1 lg:p-3 bg-white">
             <FAQCard text="How does Opay work" />
             <FAQCard text="Is Opay trustworthy?" />
             <FAQCard text="Can I make international transfer on Opay" />

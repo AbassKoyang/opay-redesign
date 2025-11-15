@@ -45,7 +45,7 @@ const Safety = () => {
     <section className="w-full py-[60px] flex items-center justify-center relative">
         <div id="safety-con" className="w-[85%]">
             <div className="w-full flex flex-col lg:flex-row items-center justify-between z-20">
-                <div className="w-full lg:w-[50%]">
+                <div className="w-full lg:w-[50%] z-20">
                     <h3 className="text-[32px] lg:text-[40px] font-raleway text-primary-purple font-extrabold mb-5 max-w-[690px]">Your safety and confidentiality are our foremost concern.</h3>
                     <div id="safety-card" className="w-full lg:w-[546px] px-5 py-3 rounded-2xl bg-[#EBEBEB] shadow-xs opacity-0 scale-50">
                     <h6 className="text-[18px] lg:text-[20px] font-raleway text-primary-purple font-bold mb-1">Advanced Fraud Detection</h6>
@@ -61,7 +61,7 @@ const Safety = () => {
                     <p className="text-[14px] lg:text-[16px] font-nunito-sans text-[#333333] font-normal">Your data is stored and encrypted using strong cryptography. We scan our systems daily against security threats.</p>
                     </div>
                 </div>
-                <div className="w-full lg:w-[50%] flex items-center justify-center lg:justify-end mt-10 lg:mt-0">
+                <div className="w-full lg:w-[50%] flex items-center justify-center lg:justify-end mt-10 lg:mt-0 z-20">
                     <img id="safety-img" className="opacity-0 scale-50 w-full lg:w-[500px]" src="/assets/images/shield.png" alt="Shield" />
                 </div>
             </div>
