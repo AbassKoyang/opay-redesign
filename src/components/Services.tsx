@@ -135,7 +135,7 @@ const Services = () => {
 
 
         <div id="debit-cards-con" className="w-full bg-white flex items-center justify-center py-12 relative">
-            <div className="w-[85%] flex flex-col lg:flex-row lg:flex-row-reverse gap-10 items-center justify-between">
+            <div className="w-[85%] flex flex-col lg:flex-row-reverse gap-10 items-center justify-between">
                 <div className="max-w-[550px] z-20">
                     <h5 id="debit-cards-texts" className="opacity-0 translate-y-[50px] text-[28px] lg:text-[32px] text-primary-green font-raleway font-extrabold">OPay Debit Cards: Your Global Passport</h5>
                     <p id="debit-cards-texts" className="opacity-0 translate-y-[50px] text-[18px] lg:text-[22px] text-[#333333] font-nunito-sans font-normal">Obtain your OPay Debit card immediately at a few OPay agent locations or apply online to take advantage of 10 free ATM withdrawals per month and no card maintenance costs. Any ATM, POS, and online accept the OPay debit card.</p>
