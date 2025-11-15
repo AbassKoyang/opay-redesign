@@ -26,14 +26,7 @@ const ChatBot = () => {
         if (!userId) return [];
       
         try {
-          let thread;
-          try {
-            thread = mastraClient.getMemoryThread(userId, 'opayAgent');
-            await thread.getMessages();
-          } catch (err) {
-            return [];
-          }
-      
+          const thread = mastraClient.getMemoryThread(userId, 'opayAgent');
           const { messages } = await thread.getMessages();
           return messages as Message[];
         } catch (error) {
@@ -106,9 +99,6 @@ const ChatBot = () => {
         ],
         threadId: userId,
         resourceId: userId,
-        runtimeContext: {
-          userId: userId
-        }
       });
       console.log(response);
 
@@ -137,7 +127,7 @@ const ChatBot = () => {
   };
 
   return (
-    <div className="relative w-full lg:w-[350px] h-[550px] lg:h-[400px] flex flex-col bg-background rounded-2xl overflow-hidden p-3 shadow-[0_5px_10px_0_rgba(0,0,0,0.12)]">
+    <div className="relative w-full lg:w-[350px] h-[500px] lg:h-[400px] flex flex-col bg-background rounded-2xl overflow-hidden p-3 shadow-[0_5px_10px_0_rgba(0,0,0,0.12)]">
       <div className="bg-card p-4 pl-2 flex items-center absolute top-0 left-0 w-full z-[1000]">
         <button>
          <ChevronLeft className='size-9 text-primary-green' />

@@ -8,12 +8,6 @@ const NavBar = () => {
             duration: 1,
             ease: 'power2.inOut'
         })
-        gsap.from('#nav-cta', {
-            x: 170,
-            duration: 1,
-            ease: 'power2.inOut',
-            delay: 1
-        })
     }, [])
 
   return (
@@ -40,7 +34,7 @@ const NavBar = () => {
                     </ul>
                 </nav>
 
-                <button id='nav-cta' className='px-4 py-2 rounded-[45px] bg-primary-green text-white text-[14px] lg:text-[16px] font-medium cursor-pointer hover:bg-primary-green/95'>Create account</button>
+                <button className='px-4 py-2 rounded-[45px] bg-primary-green text-white text-[14px] lg:text-[16px] font-medium cursor-pointer hover:bg-primary-green/95'>Create account</button>
             </div>
         </div>
     </header>
